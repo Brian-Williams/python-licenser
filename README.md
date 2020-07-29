@@ -1,16 +1,14 @@
-FORKED TO UPDATE REQUESTS LIBRARY VERSION
+# Python licenser
 
-# Python third_party_license_file_generator
-
-The Python third_party_license_file_generator is aimed at distilling down the appropriate license for one or many pip "requirements" files into a single file; it supports Python2.7 and Python3.
+The Python licenser is aimed at distilling down the appropriate license for one or many pip "requirements" files into a single file; it supports Python2.7 and Python3.
 
 ## How do I install it?
 
-    $ pip install third-party-license-file-generator
+    $ pip install python-licenser
 
 ## How do I use it?
 
-    $ python -m third_party_license_file_generator -h
+    $ python -m python-licenser -h
 
 ## How does it work?
 
