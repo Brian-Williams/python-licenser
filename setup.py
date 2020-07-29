@@ -24,7 +24,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='2020.07',
+    version='2020.07.29',
 
     description='The Python licenser is aimed at distilling down the appropriate license for one or many pip "requirements" files into a single file; it supports Python2.7 and Python3.',
     long_description=long_description,

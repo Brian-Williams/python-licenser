@@ -3,3 +3,4 @@ venv/*
 .idea/*
 dist/*
 python_licenser.egg-info/
+build/
