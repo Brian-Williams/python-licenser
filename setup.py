@@ -34,8 +34,7 @@ setup(
     url='https://github.com/Brian-Williams/python-licenser',
 
     # Author details
-    author='Edward Beech',
-    author_email='edward.beech@ftpsolutions.com.au',
+    author='Brian Williams',
 
     # Choose your license
     license='MIT',
