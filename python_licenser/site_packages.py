@@ -59,15 +59,16 @@ def _run_subprocess(command_line):
 
 
 class Module(object):
-    __slots__ = ['name', 'author', 'home_page', 'license_name', 'license_file', 'requires']
+    __slots__ = ['name', 'author', 'home_page', 'license_name', 'license_file', 'requires', 'version']
 
-    def __init__(self, name, author, home_page, license_name, license_file, requires):
+    def __init__(self, name, author, home_page, license_name, license_file, requires, version):
         self.name = name
         self.author = author
         self.home_page = home_page
         self.license_name = license_name
         self.license_file = license_file
         self.requires = requires
+        self.version = version
 
     def __repr__(self):
         return '<{0}({1}) at {2}>'.format(
@@ -185,6 +186,7 @@ class SitePackages(object):
             'author': None,
             'home_page': None,
             'license_name': None,
+            'version': None,
             'requires': [],
         }
 
@@ -207,6 +209,8 @@ class SitePackages(object):
                 metadata['home_page'] = value
             elif key == 'License':
                 metadata['license_name'] = value
+            elif key == 'Version':
+                metadata['version'] = value
             elif key == 'Requires-Dist':
                 if ';' not in value:
                     module_name = value.split('(')[0].split('<')[0].split('>')[0].split('=')[0].strip()
@@ -359,7 +363,8 @@ class SitePackages(object):
                 home_page=metadata['home_page'],
                 license_name=license_name,
                 license_file=license_file,
-                requires=metadata['requires']
+                requires=metadata['requires'],
+                version=metadata['version']
             )
 
             # print('built', module)

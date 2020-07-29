@@ -1,6 +1,6 @@
 # Python licenser
 
-The Python licenser is aimed at distilling down the appropriate license for one or many pip "requirements" files into a single file; it supports Python2.7 and Python3.
+The Python licenser is aimed at distilling down the appropriate license for one or many pip "requirements" files into a single file.
 
 ## How do I install it?
 
@@ -8,7 +8,7 @@ The Python licenser is aimed at distilling down the appropriate license for one 
 
 ## How do I use it?
 
-    $ python -m python-licenser -h
+    $ python3 -m python_licenser -h
 
 ## How does it work?
 
