@@ -10,10 +10,10 @@ import sys
 import platform
 from codecs import open
 
-from third_party_license_file_generator.licenses import (build_license_file_for_author,
-                                                         get_license_from_github_home_page_scrape,
-                                                         get_license_from_pypi_license_scrape,
-                                                         parse_license)
+from python_licenser.licenses import (build_license_file_for_author,
+                                      get_license_from_github_home_page_scrape,
+                                      get_license_from_pypi_license_scrape,
+                                      parse_license)
 
 
 def _pre_exec():

@@ -8,7 +8,7 @@ import sys
 
 import requests
 import yaml
-from third_party_license_file_generator.site_packages import SitePackages
+from python_licenser.site_packages import SitePackages
 
 # for Python2.7
 try:
@@ -18,7 +18,7 @@ except Exception:
     pass
 
 parser = argparse.ArgumentParser(
-    prog='python -m third_party_license_file_generator',
+    prog='python -m python_licenser',
     description=(
         'A tool that looks at pip requirements, virtualenv site-packages, PyPI and Github to build up '
         'information about licenses for a project. You can specify multiple instances of requirements '

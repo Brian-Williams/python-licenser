@@ -4,21 +4,21 @@ import re
 import requests
 import datetime
 
-from third_party_license_file_generator.licenses.apache_1_1 import data as apache_1_1
-from third_party_license_file_generator.licenses.apache_2_0 import data as apache_2_0
-from third_party_license_file_generator.licenses.bsd_2_clause import data as bsd_2_clause
-from third_party_license_file_generator.licenses.bsd_3_clause import data as bsd_3_clause
-from third_party_license_file_generator.licenses.gpl_2_0 import data as gpl_2_0
-from third_party_license_file_generator.licenses.gpl_3_0 import data as gpl_3_0
-from third_party_license_file_generator.licenses.isc import data as isc
-from third_party_license_file_generator.licenses.lgpl_2_1 import data as lgpl_2_1
-from third_party_license_file_generator.licenses.lgpl_3_0 import data as lgpl_3_0
-from third_party_license_file_generator.licenses.mit import data as mit
-from third_party_license_file_generator.licenses.mpl_1_0 import data as mpl_1_0
-from third_party_license_file_generator.licenses.mpl_1_1 import data as mpl_1_1
-from third_party_license_file_generator.licenses.mpl_2_0 import data as mpl_2_0
-from third_party_license_file_generator.licenses.pil import data as pil
-from third_party_license_file_generator.licenses.python_2_0 import data as python_2_0
+from python_licenser.licenses.apache_1_1 import data as apache_1_1
+from python_licenser.licenses.apache_2_0 import data as apache_2_0
+from python_licenser.licenses.bsd_2_clause import data as bsd_2_clause
+from python_licenser.licenses.bsd_3_clause import data as bsd_3_clause
+from python_licenser.licenses.gpl_2_0 import data as gpl_2_0
+from python_licenser.licenses.gpl_3_0 import data as gpl_3_0
+from python_licenser.licenses.isc import data as isc
+from python_licenser.licenses.lgpl_2_1 import data as lgpl_2_1
+from python_licenser.licenses.lgpl_3_0 import data as lgpl_3_0
+from python_licenser.licenses.mit import data as mit
+from python_licenser.licenses.mpl_1_0 import data as mpl_1_0
+from python_licenser.licenses.mpl_1_1 import data as mpl_1_1
+from python_licenser.licenses.mpl_2_0 import data as mpl_2_0
+from python_licenser.licenses.pil import data as pil
+from python_licenser.licenses.python_2_0 import data as python_2_0
 
 license_files = {
     'apache-1.1': apache_1_1,
